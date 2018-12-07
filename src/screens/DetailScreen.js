@@ -8,7 +8,15 @@ export default class DetailScreen extends React.Component {
     return {
       title: params.otherParam,
     }
-  };
+  }
+
+  checkTypes(types) {
+   return (types.map((value, index) => (
+    <View>
+      <Text>{value}</Text>
+    </View>
+   )))
+  }
 
   render() {
     const { navigation } = this.props
@@ -27,7 +35,8 @@ export default class DetailScreen extends React.Component {
         <Text>HP: {item.maxHP}</Text>
         <Text>CP: {item.maxCP}</Text>
         <Text>Classification: {item.classification}</Text>
-        <Text>Type: {item.types}</Text>  
+        <Text>Types: </Text>
+        {this.checkTypes(item.types)}
       </View>
     );
   }
