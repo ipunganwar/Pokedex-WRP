@@ -12,7 +12,7 @@ export default class DetailScreen extends React.Component {
 
   checkTypes(types) {
    return (types.map((value, index) => (
-    <View>
+    <View key={index}>
       <Text>{value}</Text>
     </View>
    )))

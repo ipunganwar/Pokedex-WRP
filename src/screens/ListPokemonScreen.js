@@ -20,7 +20,7 @@ class ListPokemonScreen extends React.Component {
       })
     } else {
       let filteredPokemons = this.props.pokemons.filter((pokemon) => {
-        return pokemon.types == text
+        return pokemon.types.indexOf(text) > -1
       })
   
       this.setState({

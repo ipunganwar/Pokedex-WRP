@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://vv-q5u.anonymous.pokedex-wrp.exp.direct",
+  "packagerNgrokUrl": "https://packager.vv-q5u.anonymous.pokedex-wrp.exp.direct",
+  "ngrokPid": 31535
 }
